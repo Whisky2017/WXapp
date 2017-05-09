@@ -1,0 +1,136 @@
+.body{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.header{
+    margin-top: 10rpx;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.time{
+    color: white;
+    font-family: 微软雅黑;
+}
+.top{
+    flex-direction: column;
+    margin-top: -900rpx;
+    /*align-self: center;*/
+    margin-left: 35%;
+}
+.top-current{
+    flex-direction: row;
+    position: relative;
+    margin-left: 20rpx;
+    
+}
+.top-current-data{
+    color: white;
+    font-size: 130rpx;
+    font-family: 微软雅黑;
+}
+.top-current-circle{
+    width: 35rpx;
+    height:35rpx;
+    position: absolute;
+    left: 130rpx;
+}
+.top-allday{
+    display: flex;
+    flex-direction: row;
+    /*justify-content: space-between;*/
+}
+.top-allday-data{
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 30rpx;
+}
+.top-allday-circle{
+    width: 20rpx;
+    height:20rpx;
+    /*position: absolute;*/
+    left: 30rpx;
+}
+.line{
+    color: white;
+    /*margin-left: 15rpx;*/
+    font-size: 30rpx;
+    font-family: 微软雅黑;
+}
+.top-allday-weather{
+    color: white;
+    font-size: 30rpx;
+    font-family: 微软雅黑;
+}
+.mid{
+    flex-direction: row;
+    margin-top: 100rpx;
+    /*justify-content: space-between;*/
+    margin-left: 30%;
+    /*margin: 0rpx auto;*/
+
+}
+.leaf,.wind{
+    width: 25rpx;
+    height: 25rpx;
+}
+.wind{
+    margin-left: 40rpx;
+}
+.data{
+    color: white;
+    font-size: 28rpx;
+    font-family: 微软雅黑;
+    margin-left: 5rpx;
+}
+
+.bottom {
+  margin-top: 300rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.bottom-itemview {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /*margin-bottom: 200rpx;*/
+}
+
+.bottom-image {
+  width: 70rpx;
+  height: 70rpx;
+}
+
+.bottom-text {
+  font-size: 28rpx;
+  color: white;
+}
+.bottom-allday{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-right:13rpx; 
+}
+.bottom-allday-data{
+    color: white;
+    font-family: 微软雅黑;
+    font-size: 25rpx;
+}
+.bottom-allday-circle{
+    width: 15rpx;
+    height:15rpx;
+    /*position: absolute;*/
+    left: 25rpx;
+}
+.bottom-line{
+    color: white;
+    /*margin-left: 15rpx;*/
+    font-size: 25rpx;
+    font-family: 微软雅黑;
+}
+

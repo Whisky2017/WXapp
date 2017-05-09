@@ -1,0 +1,50 @@
+<view class="body" style="background-image:url(https://raw.githubusercontent.com/wskyt/WXapp/master/WXapp/images/bg.jpg);height:571px">
+  <view  class="header">
+    <text class="time">{{time}}</text>
+  </view>
+  <view class="content">
+    <view class="top">
+        <view class="top-current">
+            <text class="top-current-data">{{currentTemperature}}</text>
+            <image class="top-current-circle" src="../../images/circle.png"></image>
+        </view>
+        <view class="top-allday">
+            <text class="top-allday-data">{{nightAirTemperature}}</text>
+            <image class="top-allday-circle" src="../../images/circle.png"></image>
+             <text class="line">/</text>
+            <text class="top-allday-data">{{dayAirTemperature}}</text>
+            <image class="top-allday-circle" src="../../images/circle.png"></image>
+            <text class="top-allday-weather">{{weather}}</text>
+        </view>
+    </view>
+    <view class="mid">
+        <image class="leaf" src="../../images/leaf.png"></image>
+        <text id="aqi" class="data">{{aqi}}</text>
+        <text id="quality" class="data">{{quality}}</text>
+        <image class="wind" src="../../images/wind.png"></image>
+        <text id="windpower" class="data">{{windPower}}</text>
+        <text id="winddirection" class="data">{{windDirection}}</text>
+    </view>
+    <view class="bottom">
+        <block wx:for-items="{{list}}">
+            <view class="bottom-itemview">
+                <image class="bottom-image" src="{{item.day_weather_pic}}" style="margin-bottom: 15rpx;" />
+                <text wx:if="{{item.weekday == 1}}" class="bottom-text">星期一</text>
+                <text wx:elif="{{item.weekday == 2}}" class="bottom-text">星期二</text>
+                <text wx:elif="{{item.weekday == 3}}" class="bottom-text">星期三</text>
+                <text wx:elif="{{item.weekday == 4}}" class="bottom-text">星期四</text>
+                <text wx:elif="{{item.weekday == 5}}" class="bottom-text">星期五</text>
+                <text wx:elif="{{item.weekday == 6}}" class="bottom-text">星期六</text>
+                <text wx:else="{{item.weekday == 7}}" class="bottom-text">星期日</text>
+                <view class="bottom-allday">
+                    <text class="bottom-allday-data">{{item.night_air_temperature}}</text>
+                    <image class="bottom-allday-circle" src="../../images/circle.png"></image>
+                    <text class="bottom-line">/</text>
+                    <text class="bottom-allday-data">{{item.day_air_temperature}}</text>
+                    <image class="bottom-allday-circle" src="../../images/circle.png"></image>
+                </view>
+            </view>
+        </block>
+    </view>
+  </view>
+</view>
